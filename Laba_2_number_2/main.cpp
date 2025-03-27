@@ -15,10 +15,10 @@ int main() {
 	cin >> year;
 	now = new Date(day, month, year);
 	now->print();
-	now->fun_1();
-	now->fun_2();
+	now->leap();
+	now->change();
 	cout << "after change:" << endl;
 	now->print();
-	now->fun_1();
+	now->leap();
 	delete now;
 }
